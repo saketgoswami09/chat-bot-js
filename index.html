@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Import Material Symbols Rounded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+
+    <!-- Your other stylesheets can go here -->
+     
+   
+  </head>
+  <body>
+   <button id="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+     <span class="material-symbols-rounded">close</span> 
+  </button>
+
+    
+     
+    </nav>
+    <div class="chatbot-popup">
+      <!-- chatbot header -->
+      <div class="chat-header">
+        
+     
+        
+        <div class="header-info">
+          <svg 
+        class="chatbot-logo"
+        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
+     
+          <h2 class="logo-text">Chatbot</h2>
+        </div>
+        <!-- sda -->
+        
+       
+       
+          <button id="close-chatbot" class="material-symbols-rounded">
+            keyboard_arrow_down
+            </button>
+        </div>
+
+      
+
+      <!-- chat-body -->
+      <div class="chat-body">
+        <div class="message bot-message">
+          <svg 
+             class="bot-avtar"
+            xmlns="http://www.w3.org/2000/svg"
+            height="50px"
+            viewBox="0 -960 960 960"
+            width="50px"
+            fill="#5f6368"
+          >
+            <path
+              d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+            />
+          </svg>
+          <div class="message-text">
+            HeyThere👋 <br />
+            How can i help you today?
+          </div>
+        </div>
+        <!-- chat-footer -->
+      <div class="chat-footer">
+        <form action="#" class="chat-form">
+          <textarea placeholder="Message..." class="message-input" required></textarea>
+          
+          <div class="chat-controls">
+            <button type="button" id="emoji-picker" class="material-symbols-outlined" >sentiment_satisfied</button>
+            <div class="file-upload-wrraper">
+              <input type="file" accept="images/*" id="file-input" hidden>
+              <img src="#">
+              <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+              <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+
+            </div>
+            <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+          </div>
+
+        </form>
+      </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+      <script src="script.js"></script>
+    </body>
+      </html>
+
+
